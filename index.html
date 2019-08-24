@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <!-- Author: tareq sultan (s.tareq.s@gmail.com) -->
 <html>
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioContext = new AudioContext();
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
@@ -11,9 +13,7 @@
   <p>Example of using the Web Audio API </p>
   </body>
   <script type="javascript"> 
-  const AudioContext = window.AudioContext || window.webkitAudioContext;
-
-const audioContext = new AudioContext();
+ 
   var context = new AudioContext();
 var buffer = context.createBuffer(2, 22050, 44100);
     
