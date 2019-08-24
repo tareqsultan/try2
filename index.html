@@ -11,7 +11,7 @@
   <p>Example of using the Web Audio API </p>
   <script type="javascript"> 
     var audioContext = new AudioContext();  
-    var osillator = audioContext.createOsillator(); 
+    var osillator = AudioContext.createOsillator(); 
     osillator.connect(AudioContext.destination);
     osillator.start();
     setTimeout(function (){
