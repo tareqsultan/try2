@@ -12,7 +12,7 @@
   <script type="javascript"> 
     var audioContext = new AudioContext();  
     var osillator = audioContext.createOsillator(); 
-    osillator.connect(audioContext.destination);
+    osillator.connect(AudioContext.destination);
     osillator.start();
     setTimeout(function (){
     osillator.stop()},2000);
