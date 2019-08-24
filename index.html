@@ -10,7 +10,9 @@
 <body>
   <p>Example of using the Web Audio API </p>
   <script type="javascript"> 
-    var audioContext = new AudioContext();  
+  var context = new AudioContext();
+var buffer = context.createBuffer(2, 22050, 44100);
+    
     var Osillator = AudioContext.createOsillator(); 
     Osillator.connect(AudioContext.destination);
     Osillator.start();
