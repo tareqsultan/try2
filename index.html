@@ -1,41 +1,10 @@
-
 <!DOCTYPE html>
-<!-- Author: tareq sultan (s.tareq.s@gmail.com) -->
 <html>
-
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-  <title>Web Audio API</title>
+    <title>AudioLib</title>
 </head>
 <body>
-  <p>Example of using the Web Audio API </p>
-  </body>
-  <script type="JavaScript"> 
-  var context = new AudioContext();
-var buffer = context.createBuffer(2, 22050, 44100);
-// create web audio api context
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
-// create Oscillator node
-var oscillator = audioCtx.createOscillator();
-
-oscillator.type = 'square';
-oscillator.frequency.setValueAtTime(440, audioCtx.currentTime); // value in hertz
-oscillator.connect(audioCtx.destination);
-oscillator.start();
-    
-    
-    
-   // setTimeout(function (){
-  //  Osillator.stop()},2000);
-    
-    
-    
-    
-  
-   
-
-</script>
+    <script type="text/javascript" src="tones.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
 </body>
 </html>
